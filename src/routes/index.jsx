@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
         },
         {
           path: "wines/new",
-          element: <WineForm/>
+          element: <WineForm/> // components render by router when path is visited
         }
       ]
     },

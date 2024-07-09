@@ -28,7 +28,7 @@ export const fetchPatchWine = (url, validFormData, handlePatchWine, toggleEditMo
         });
 }
 
-export const fetchPostWine = (url, finalizedData, handleFormData, initialState, handleError, navigate) => {
+export const fetchPostWine = (url, finalizedData, handleError, navigate) => {
     fetch(url, {
         method: "POST",
         headers: {

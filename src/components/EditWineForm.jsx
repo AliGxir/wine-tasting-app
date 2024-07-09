@@ -3,6 +3,7 @@ import { object, string } from "yup";
 import { fetchPatchWine } from "../apis/wineApi";
 import { useNavigate } from "react-router-dom";
 
+
 const url = "http://localhost:3000/wines";
 
 const wineSchema = object({
@@ -94,4 +95,4 @@ const EditWineForm = ({
   );
 };
 
-export default EditProjectForm;
+export default EditWineForm;
