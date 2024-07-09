@@ -1,29 +1,30 @@
-import Wine from './Wine';
-import SearchBar from './SearchBar';
-import { useOutletContext } from 'react-router-dom';
-import { useState } from 'react';
+import Wine from "./Wine";
+import SearchBar from "./SearchBar";
+import { useOutletContext, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const Wines = () => {
-    const [searchQuery, setSearchQuery] = useState("");
-    const {wines, handleDelete} = useOutletContext();
+  const [searchQuery, setSearchQuery] = useState("");
+  const { wines, handleLike, favWines } = useOutletContext();
+  const location = useLocation();
+  console.log(location)
+  const winesDisplay = location.pathname === "/wines" ? wines : favWines
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+  };
 
-      const handleSearch = (e) => {
-        setSearchQuery(e.target.value)
-      }
+  const finalWines = winesDisplay
+    .filter((wine) => {
+      return wine.name.toLowerCase().includes(searchQuery.toLowerCase());
+    })
+    .map((wine) => <Wine key={wine.id} isLiked={favWines.find((wineObj) => wine.id === wineObj.id)} {...wine} handleLike={handleLike} />);
 
-      const finalWines = wines
-      .filter(wine => {
-        return (wine.name.toLowerCase().includes(searchQuery.toLowerCase()))
-      })
-      .map(wine => (<Wine key={wine.id} {...wine} handleDelete={handleDelete}/>))
-
-    return (
-        <main>
-           <SearchBar searchQuery={searchQuery} handleSearch={handleSearch} />
-           <ul className="cards">{finalWines}</ul>
-        </main>
-
-    )
-}
+  return (
+    <main>
+      <SearchBar searchQuery={searchQuery} handleSearch={handleSearch} />
+      <ul className="cards">{finalWines}</ul>
+    </main>
+  );
+};
 
 export default Wines;

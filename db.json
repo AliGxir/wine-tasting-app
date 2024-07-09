@@ -1,98 +1,120 @@
 {
-    "wines": [
-      {
-        "id": "1",
-        "name": "Chateau Margaux",
-        "region": "Bordeaux",
-        "price": 450,
-        "rating": 4.8,
-        "tasting_notes": "Full-bodied with dark fruit flavors and earthy undertones.",
-        "image": "https://example.com/images/chateau_margaux.jpg"
-      },
-      {
-        "id": "2",
-        "name": "Sassicaia",
-        "region": "Tuscany",
-        "price": 300,
-        "rating": 4.7,
-        "tasting_notes": "Rich and complex with notes of blackberry, leather, and spice.",
-        "image": "https://example.com/images/sassicaia.jpg"
-      },
-      {
-        "id": "3",
-        "name": "Penfolds Grange",
-        "region": "South Australia",
-        "price": 700,
-        "rating": 4.9,
-        "tasting_notes": "Intense and layered with flavors of dark cherry, chocolate, and oak.",
-        "image": "https://example.com/images/penfolds_grange.jpg"
-      },
-      {
-        "id": "4",
-        "name": "Opus One",
-        "region": "Napa Valley",
-        "price": 350,
-        "rating": 4.6,
-        "tasting_notes": "Elegant and balanced with hints of blackcurrant, vanilla, and cedar.",
-        "image": "https://example.com/images/opus_one.jpg"
-      },
-      {
-        "id": "5",
-        "name": "Vega Sicilia Unico",
-        "region": "Ribera del Duero",
-        "price": 500,
-        "rating": 4.8,
-        "tasting_notes": "Velvety texture with flavors of plum, tobacco, and spice.",
-        "image": "https://example.com/images/vega_sicilia_unico.jpg"
-      },
-      {
-        "id": "6",
-        "name": "Dominus Estate",
-        "region": "Napa Valley",
-        "price": 280,
-        "rating": 4.7,
-        "tasting_notes": "Complex with notes of blackberry, licorice, and earthy minerals.",
-        "image": "https://example.com/images/dominus_estate.jpg"
-      },
-      {
-        "id": "7",
-        "name": "Harlan Estate",
-        "region": "Napa Valley",
-        "price": 900,
-        "rating": 4.9,
-        "tasting_notes": "Rich and opulent with flavors of dark fruit, mocha, and leather.",
-        "image": "https://example.com/images/harlan_estate.jpg"
-      },
-      {
-        "id": "8",
-        "name": "Chateau Lafite Rothschild",
-        "region": "Bordeaux",
-        "price": 1000,
-        "rating": 4.9,
-        "tasting_notes": "Elegant and refined with notes of cassis, graphite, and cedar.",
-        "image": "https://example.com/images/chateau_lafite_rothschild.jpg"
-      },
-      {
-        "id": "9",
-        "name": "Gaja Barbaresco",
-        "region": "Piedmont",
-        "price": 250,
-        "rating": 4.6,
-        "tasting_notes": "Aromas of roses and cherries with a long, spicy finish.",
-        "image": "https://example.com/images/gaja_barbaresco.jpg"
-      },
-      {
-        "id": "10",
-        "name": "Chateau d'Yquem",
-        "region": "Bordeaux",
-        "price": 600,
-        "rating": 4.9,
-        "tasting_notes": "Luxurious and sweet with flavors of apricot, honey, and vanilla.",
-        "image": "https://example.com/images/chateau_dyquem.jpg"
-      }
-    
-    ],
-    "favorites": [
-
-    ]
-  }
+  "wines": [
+    {
+      "id": "1",
+      "name": "Chateau Margaux",
+      "region": "Bordeaux",
+      "price": 450,
+      "rating": 4.8,
+      "tasting_notes": "Full-bodied with dark fruit flavors and earthy undertones.",
+      "image": "https://example.com/images/chateau_margaux.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Sassicaia",
+      "region": "Tuscany",
+      "price": 300,
+      "rating": 4.7,
+      "tasting_notes": "Rich and complex with notes of blackberry, leather, and spice.",
+      "image": "https://example.com/images/sassicaia.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Penfolds Grange",
+      "region": "South Australia",
+      "price": 700,
+      "rating": 4.9,
+      "tasting_notes": "Intense and layered with flavors of dark cherry, chocolate, and oak.",
+      "image": "https://example.com/images/penfolds_grange.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Opus One",
+      "region": "Napa Valley",
+      "price": 350,
+      "rating": 4.6,
+      "tasting_notes": "Elegant and balanced with hints of blackcurrant, vanilla, and cedar.",
+      "image": "https://example.com/images/opus_one.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Vega Sicilia Unico",
+      "region": "Ribera del Duero",
+      "price": 500,
+      "rating": 4.8,
+      "tasting_notes": "Velvety texture with flavors of plum, tobacco, and spice.",
+      "image": "https://example.com/images/vega_sicilia_unico.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Dominus Estate",
+      "region": "Napa Valley",
+      "price": 280,
+      "rating": 4.7,
+      "tasting_notes": "Complex with notes of blackberry, licorice, and earthy minerals.",
+      "image": "https://example.com/images/dominus_estate.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Harlan Estate",
+      "region": "Napa Valley",
+      "price": 900,
+      "rating": 4.9,
+      "tasting_notes": "Rich and opulent with flavors of dark fruit, mocha, and leather.",
+      "image": "https://example.com/images/harlan_estate.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Chateau Lafite Rothschild",
+      "region": "Bordeaux",
+      "price": 1000,
+      "rating": 4.9,
+      "tasting_notes": "Elegant and refined with notes of cassis, graphite, and cedar.",
+      "image": "https://example.com/images/chateau_lafite_rothschild.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Gaja Barbaresco",
+      "region": "Piedmont",
+      "price": 250,
+      "rating": 4.6,
+      "tasting_notes": "Aromas of roses and cherries with a long, spicy finish.",
+      "image": "https://example.com/images/gaja_barbaresco.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Chateau d'Yquem",
+      "region": "Bordeaux",
+      "price": 600,
+      "rating": 4.9,
+      "tasting_notes": "Luxurious and sweet with flavors of apricot, honey, and vanilla.",
+      "image": "https://example.com/images/chateau_dyquem.jpg"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "4",
+      "name": "Opus One",
+      "price": 350,
+      "image": "https://example.com/images/opus_one.jpg"
+    },
+    {
+      "id": "1",
+      "name": "Chateau Margaux",
+      "price": 450,
+      "image": "https://example.com/images/chateau_margaux.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Sassicaia",
+      "price": 300,
+      "image": "https://example.com/images/sassicaia.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Penfolds Grange",
+      "price": 700,
+      "image": "https://example.com/images/penfolds_grange.jpg"
+    }
+  ]
+}

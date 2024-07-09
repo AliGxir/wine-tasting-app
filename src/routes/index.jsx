@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Wines from "../components/Wines";
+import WineForm from "../components/WineForm";
 
 export const router = createBrowserRouter([
     {
@@ -8,15 +9,17 @@ export const router = createBrowserRouter([
       element: <App />,
       children: [
         {
-            path: "wines",
-            element: <Wines/>,
-            children: [
-                // {
-                //     path: "/wines/:id",
-                //     element: <Wine/>,
-                // }
-            ]
+          path: "wines",
+          element: <Wines/>
         },
-      ],
+        {
+          path: "favorite-wines",
+          element: <Wines/>
+        },
+        {
+          path: "wines/new",
+          element: <WineForm/>
+        }
+      ]
     },
   ]);
