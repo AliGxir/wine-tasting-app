@@ -19,6 +19,7 @@ const Wines = () => {
     })
     .map((wine) => (
       <Wine
+        className="wine-container"
         key={wine.id}
         isLiked={favWines.find((wineObj) => wine.id === wineObj.id)}
         {...wine}

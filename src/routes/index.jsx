@@ -3,12 +3,17 @@ import App from "../App";
 import Wines from "../components/Wines";
 import WineForm from "../components/WineForm";
 import WineDetail from "../components/WineDetail";
+import Hero from "../components/Hero";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        index: true,
+        element: <Hero />
+      },
       {
         path: "wines",
         element: <Wines />,

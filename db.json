@@ -7,7 +7,7 @@
       "price": 450,
       "rating": 4.8,
       "tasting_notes": "Full-bodied with dark fruit flavors and earthy undertones.",
-      "image": "https://example.com/images/chateau_margaux.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUvL2qvUc6QI716dPKuoBd5m5YEzaU7f71FA&s"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "price": 300,
       "rating": 4.7,
       "tasting_notes": "Rich and complex with notes of blackberry, leather, and spice.",
-      "image": "https://example.com/images/sassicaia.jpg"
+      "image": "https://cdn.cluboenologique.com/wp-content/uploads/2021/02/12142753/SASSICAIA-2018-75cl-scaled.jpg"
     },
     {
       "id": "3",
@@ -25,7 +25,7 @@
       "price": 700,
       "rating": 4.9,
       "tasting_notes": "Intense and layered with flavors of dark cherry, chocolate, and oak.",
-      "image": "https://example.com/images/penfolds_grange.jpg"
+      "image": "https://www.astorwines.com/images/items/16342.jpg"
     },
     {
       "id": "4",
@@ -34,7 +34,7 @@
       "price": 350,
       "rating": 4.6,
       "tasting_notes": "Elegant and balanced with hints of blackcurrant, vanilla, and cedar.",
-      "image": "https://example.com/images/opus_one.jpg"
+      "image": "https://d3czfiwbzom72b.cloudfront.net/wp-content/uploads/2021/10/Opus-One-Napa-Red-2018.png"
     },
     {
       "id": "5",
@@ -43,7 +43,7 @@
       "price": 500,
       "rating": 4.8,
       "tasting_notes": "Velvety texture with flavors of plum, tobacco, and spice.",
-      "image": "https://example.com/images/vega_sicilia_unico.jpg"
+      "image": "https://www.lavinateria.net/15907-medium_default/enate-reserva-especial.jpg"
     },
     {
       "id": "6",
@@ -52,7 +52,7 @@
       "price": 280,
       "rating": 4.7,
       "tasting_notes": "Complex with notes of blackberry, licorice, and earthy minerals.",
-      "image": "https://example.com/images/dominus_estate.jpg"
+      "image": "https://icdn.bottlenose.wine/images/full/637699.jpg?min-w=200&min-h=200&fit=crop"
     },
     {
       "id": "7",
@@ -61,7 +61,7 @@
       "price": 900,
       "rating": 4.9,
       "tasting_notes": "Rich and opulent with flavors of dark fruit, mocha, and leather.",
-      "image": "https://example.com/images/harlan_estate.jpg"
+      "image": "https://angrywinemerchant.com/cdn/shop/files/HarlanEstateWine-AngryWineMerchant_f0bfb301-5c0f-409e-974a-e0a832124d37_grande.jpg?v=1700240656"
     },
     {
       "id": "8",
@@ -70,7 +70,7 @@
       "price": 1000,
       "rating": 4.9,
       "tasting_notes": "Elegant and refined with notes of cassis, graphite, and cedar.",
-      "image": "https://example.com/images/chateau_lafite_rothschild.jpg"
+      "image": "https://www.winedeals.com/media/catalog/product/cache/f8d2cb12a17084a7445beefcce31e97a/l/a/lafite_rothschild_20_750.jpg"
     },
     {
       "id": "9",
@@ -79,7 +79,7 @@
       "price": 250,
       "rating": 4.6,
       "tasting_notes": "Aromas of roses and cherries with a long, spicy finish.",
-      "image": "https://example.com/images/gaja_barbaresco.jpg"
+      "image": "https://www.saratogawine.com/wp-content/uploads/2024/01/fbbfbad.jpg"
     },
     {
       "id": "10",
@@ -88,87 +88,11 @@
       "price": 600,
       "rating": 4.9,
       "tasting_notes": "Luxurious and sweet with flavors of apricot, honey, and vanilla.",
-      "image": "https://example.com/images/chateau_dyquem.jpg"
-    },
-    {
-      "id": "811c",
-      "name": "test",
-      "region": "test",
-      "price": "test",
-      "rating": "test",
-      "tastingNotes": "test",
-      "image": "test"
-    },
-    {
-      "id": "fa48",
-      "image": "test",
-      "tastingNotes": "test",
-      "rating": 2,
-      "price": 5,
-      "region": "test",
-      "name": "test"
-    },
-    {
-      "id": "1d4b",
-      "image": "test",
-      "tastingNotes": "test",
-      "rating": 2,
-      "price": 34.3434324343,
-      "region": "test",
-      "name": "test"
-    },
-    {
-      "id": "353c",
-      "image": "test",
-      "tastingNotes": "test",
-      "rating": 2,
-      "price": 343243.432434,
-      "region": "test",
-      "name": "test"
-    },
-    {
-      "id": "e2bb",
-      "image": "test",
-      "tastingNotes": "test",
-      "rating": 2,
-      "price": 23.234,
-      "region": "test",
-      "name": "test"
-    },
-    {
-      "id": "4e67",
-      "image": "test",
-      "tastingNotes": "test",
-      "rating": 2,
-      "price": "1232434.23",
-      "region": "test",
-      "name": "test"
+      "image": "https://www.vintagewineandport.co.uk/images/products/medium_Product_25366-1986-Yquem.jpg.0.jpg"
     }
   ],
+  
   "favorites": [
-    {
-      "id": "4",
-      "name": "Opus One",
-      "price": 350,
-      "image": "https://example.com/images/opus_one.jpg"
-    },
-    {
-      "id": "1",
-      "name": "Chateau Margaux",
-      "price": 450,
-      "image": "https://example.com/images/chateau_margaux.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Sassicaia",
-      "price": 300,
-      "image": "https://example.com/images/sassicaia.jpg"
-    },
-    {
-      "id": "3",
-      "name": "Penfolds Grange",
-      "price": 700,
-      "image": "https://example.com/images/penfolds_grange.jpg"
-    }
+  
   ]
 }
