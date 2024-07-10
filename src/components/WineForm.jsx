@@ -26,7 +26,7 @@ const wineSchema = object({
 });
 
 const WineForm = () => {
-  const [formData, setFormData] = useState(initialState);
+  const [formData, setFormData] = useState(initialState); // Single source of truth, predictability, testable
   const [error, setError] = useState("");
   const { handleAddWine } = useOutletContext();
   const navigate = useNavigate();

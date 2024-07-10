@@ -7,7 +7,7 @@ const ErrorPage = () => {
   return (
     <>
       <Header />
-      <div>{error.message}</div>
+      <div>{error.message || error.text}</div>
     </>
   );
 };

@@ -8,17 +8,17 @@ const Header = ({ isDarkMode, onToggleDarkMode }) => {
         Wine Tasting Tracker
       </h1>
       <NavLink to="/wines">All Wines</NavLink>
-      <NavLink
+      <NavLink // smart <a that does not force page refresh, talks to router
         to="/wines/favorite-wines"
         className={({ isActive }) => (isActive ? "active" : "")}
       >
         My Favorites
       </NavLink>
-      <NavLink
-        to="/wines/:id"
-        className={({ isActive }) => (isActive ? "active" : "")}
+      <NavLink 
+       to="/wines/new" 
+       className={({ isActive }) => (isActive ? "active" : "")}
       >
-        Wine
+        Wine Form
       </NavLink>
       <button onClick={onToggleDarkMode}>
         {isDarkMode ? "Light Mode" : "Dark Mode"}

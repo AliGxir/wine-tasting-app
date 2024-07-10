@@ -4,11 +4,13 @@ import Wines from "../components/Wines";
 import WineForm from "../components/WineForm";
 import WineDetail from "../components/WineDetail";
 import Hero from "../components/Hero";
+import ErrorPage from "../components/error/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,

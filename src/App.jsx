@@ -12,7 +12,7 @@ const App = () => {
 
   const toggleDarkMode = () => setIsDarkMode((current) => !current);
 
-  useEffect(() => {
+  useEffect(() => { // used for side effects like fetch data in sync w/rendering cycle
     (() => {
       fetch("http://localhost:3000/wines")
         .then((resp) => resp.json())
@@ -21,7 +21,7 @@ const App = () => {
     })();
   }, []);
 
-  useEffect(() => {
+  useEffect(() => { // clean up fxn undo effect, invoked on every rendering, anynomous fxn returned at bottom of first arugment of the useEffect fxn
     (() => {
       fetch("http://localhost:3000/favorites")
         .then((resp) => resp.json())
@@ -74,8 +74,6 @@ const App = () => {
       <div id="toast-notification">
         <Toaster />
       </div>
-      <Toaster />
-      <Hero />
       <Header isDarMode={isDarkMode} onToggleDarkMode={toggleDarkMode} />
       <Outlet context={{ wines, handleLike, favWines, handleAddWine }} />
       {/* only contains information*/}
