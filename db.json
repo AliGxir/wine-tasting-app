@@ -98,6 +98,51 @@
       "rating": "test",
       "tastingNotes": "test",
       "image": "test"
+    },
+    {
+      "id": "fa48",
+      "image": "test",
+      "tastingNotes": "test",
+      "rating": 2,
+      "price": 5,
+      "region": "test",
+      "name": "test"
+    },
+    {
+      "id": "1d4b",
+      "image": "test",
+      "tastingNotes": "test",
+      "rating": 2,
+      "price": 34.3434324343,
+      "region": "test",
+      "name": "test"
+    },
+    {
+      "id": "353c",
+      "image": "test",
+      "tastingNotes": "test",
+      "rating": 2,
+      "price": 343243.432434,
+      "region": "test",
+      "name": "test"
+    },
+    {
+      "id": "e2bb",
+      "image": "test",
+      "tastingNotes": "test",
+      "rating": 2,
+      "price": 23.234,
+      "region": "test",
+      "name": "test"
+    },
+    {
+      "id": "4e67",
+      "image": "test",
+      "tastingNotes": "test",
+      "rating": 2,
+      "price": "1232434.23",
+      "region": "test",
+      "name": "test"
     }
   ],
   "favorites": [

@@ -19,11 +19,13 @@ const initialState = {
 const wineSchema = object({
   name: string().required("Name is required!"),
   region: string().required("Region is required!"),
-  price: number().required("Price is required!").positive(),
+  price: number().positive().required("Price is required!"),
   rating: number().min(0).max(10).required("Rating is required!"),
   tastingNotes: string().required("Tasting notes is required!"),
   image: string().required("Image is required!"),
 });
+
+
 
 const WineForm = () => {
   const [formData, setFormData] = useState(initialState);
@@ -45,7 +47,7 @@ const WineForm = () => {
     wineSchema
       .validate(formData)
       .then((validFormData) => {
-        const finalizedData = { ...validFormData, id: uuid().slice(0,4) };
+        const finalizedData = { ...validFormData, id: uuid().slice(0,4), price: Number.parseFloat(formData.price).toFixed(2) };
         handleAddWine(finalizedData);
         fetchPostWine(
           url,
