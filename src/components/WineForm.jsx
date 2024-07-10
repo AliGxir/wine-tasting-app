@@ -1,7 +1,7 @@
 import { string, object, number } from "yup";
 import { useState } from "react";
 import { useOutletContext, useNavigate, useLocation } from "react-router-dom";
-import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from "uuid";
 import { fetchPostWine } from "./apis/wineApi";
 
 const url = "http://localhost:3000/wines";
@@ -25,8 +25,6 @@ const wineSchema = object({
   image: string().required("Image is required!"),
 });
 
-
-
 const WineForm = () => {
   const [formData, setFormData] = useState(initialState);
   const [error, setError] = useState("");
@@ -47,14 +45,13 @@ const WineForm = () => {
     wineSchema
       .validate(formData)
       .then((validFormData) => {
-        const finalizedData = { ...validFormData, id: uuid().slice(0,4), price: Number.parseFloat(formData.price).toFixed(2) };
+        const finalizedData = {
+          ...validFormData,
+          id: uuid().slice(0, 4),
+          price: Number.parseFloat(formData.price).toFixed(2),
+        };
         handleAddWine(finalizedData);
-        fetchPostWine(
-          url,
-          finalizedData,
-          handleError,
-          navigate
-        );
+        fetchPostWine(url, finalizedData, handleError, navigate);
       })
       .catch((validationError) => setError(validationError.message));
   };
@@ -95,7 +92,7 @@ const WineForm = () => {
             onChange={handleChange}
           />
         </div>
-  
+
         <div className="form-row">
           <label htmlFor="rating">Rating</label>
           <input
@@ -108,7 +105,7 @@ const WineForm = () => {
             onChange={handleChange}
           />
         </div>
-       
+
         <div className="form-row">
           <label htmlFor="tastingNotes">Tasting Notes</label>
           <input
@@ -119,7 +116,7 @@ const WineForm = () => {
             onChange={handleChange}
           />
         </div>
-    
+
         <div className="form-row">
           <label htmlFor="image">Image</label>
           <input
@@ -130,7 +127,7 @@ const WineForm = () => {
             onChange={handleChange}
           />
         </div>
-    
+
         <button type="submit">Add Wine</button>
       </form>
     </section>

@@ -7,8 +7,8 @@ const Wines = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const { wines, handleLike, favWines } = useOutletContext();
   const location = useLocation();
-  console.log(location)
-  const winesDisplay = location.pathname === "/wines" ? wines : favWines
+  console.log(location);
+  const winesDisplay = location.pathname === "/wines" ? wines : favWines;
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -17,7 +17,14 @@ const Wines = () => {
     .filter((wine) => {
       return wine.name.toLowerCase().includes(searchQuery.toLowerCase());
     })
-    .map((wine) => <Wine key={wine.id} isLiked={favWines.find((wineObj) => wine.id === wineObj.id)} {...wine} handleLike={handleLike} />);
+    .map((wine) => (
+      <Wine
+        key={wine.id}
+        isLiked={favWines.find((wineObj) => wine.id === wineObj.id)}
+        {...wine}
+        handleLike={handleLike}
+      />
+    ));
 
   return (
     <main>

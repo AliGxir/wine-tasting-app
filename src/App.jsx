@@ -3,7 +3,7 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import Header from "./components/navigation/Header";
-import WineForm from "./components/WineForm";
+import Hero from "./components/Hero";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -65,9 +65,9 @@ const App = () => {
       .catch((err) => toast.error(`${err.name}: ${err.message}`));
   };
 
-    const handleAddWine = (newWine) => {
-      return setWines((current) => [...current, newWine])
-    }
+  const handleAddWine = (newWine) => {
+    return setWines((current) => [...current, newWine]);
+  };
 
   return (
     <div className={isDarkMode ? "App" : "App light"}>
@@ -75,8 +75,10 @@ const App = () => {
         <Toaster />
       </div>
       <Toaster />
+      <Hero />
       <Header isDarMode={isDarkMode} onToggleDarkMode={toggleDarkMode} />
-      <Outlet context={{ wines, handleLike, favWines, handleAddWine }} /> {/* only contains information*/}
+      <Outlet context={{ wines, handleLike, favWines, handleAddWine }} />
+      {/* only contains information*/}
     </div>
   );
 };
