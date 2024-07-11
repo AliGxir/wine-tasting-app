@@ -147,5 +147,14 @@
   background-color: #8b0000; 
 }
 
+.App {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  height: 100%;
+}
 
-
+.App.light {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(255, 255, 255, 0.87);
+}
