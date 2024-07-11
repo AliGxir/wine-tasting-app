@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Wine = ({ id, name, price, image, handleLike, isLiked }) => {
