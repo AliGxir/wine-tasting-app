@@ -6,29 +6,28 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(255, 255, 255, 0.87);
+    
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* 
+
 .App {
-  color: var(--color);
-  background-color: var(#242424);
-  min-height: 100vh;
-} */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
 
 .App.light {
-    --primary-color: #302AE6;
-    --secondary-color: #536390;
-    --font-color: #424242;
-    --bg-color: #fff;
-    --heading-color: #292922;
-  /* --color: var(--black);
-  --background: var(--white);
-  --primary: var(--dark-turquoise); */
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(255, 255, 255, 0.87);
 }
+
 
 a {
   font-weight: 1000;
@@ -48,7 +47,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-color: white; */
+  background-color: #242424;
 }
 
 .dark-mode {
@@ -81,7 +80,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: .dark-mode) {
   :root {
     color: #213547;
     background-color: #ffffff;
