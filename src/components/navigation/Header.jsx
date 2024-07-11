@@ -5,7 +5,7 @@ const Header = ({ isDarkMode, onToggleDarkMode }) => {
     <header>
       <h1>
         <span className="logo">🍷</span>
-        Wine Tasting Tracker
+        Wine Tasting Tracker 🍷
       </h1>
       <NavLink to="/wines">All Wines</NavLink>
       <NavLink // smart <a that does not force page refresh, talks to router
