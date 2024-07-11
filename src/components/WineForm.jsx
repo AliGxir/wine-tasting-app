@@ -41,7 +41,6 @@ const WineForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // validate with yup
     wineSchema
       .validate(formData)
       .then((validFormData) => {

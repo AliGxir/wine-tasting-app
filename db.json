@@ -102,22 +102,10 @@
   ],
   "favorites": [
     {
-      "id": "2",
-      "name": "Sassicaia",
-      "price": 300,
-      "image": "https://cdn.cluboenologique.com/wp-content/uploads/2021/02/12142753/SASSICAIA-2018-75cl-scaled.jpg"
-    },
-    {
-      "id": "3",
-      "name": "Penfolds Grange",
-      "price": 700,
-      "image": "https://www.astorwines.com/images/items/16342.jpg"
-    },
-    {
-      "id": "4",
-      "name": "Opus One",
-      "price": 350,
-      "image": "https://d3czfiwbzom72b.cloudfront.net/wp-content/uploads/2021/10/Opus-One-Napa-Red-2018.png"
+      "id": "1",
+      "name": "Chateau Margaux",
+      "price": 450,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUvL2qvUc6QI716dPKuoBd5m5YEzaU7f71FA&s"
     }
   ]
 }

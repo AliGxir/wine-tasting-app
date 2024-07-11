@@ -76,7 +76,6 @@ const App = () => {
       </div>
       <Header isDarkMode={isDarkMode} onToggleDarkMode={toggleDarkMode} />
       <Outlet context={{ wines, handleLike, favWines, handleAddWine }} />
-      {/* only contains information*/}
       <Footer />
     </div>
   );
