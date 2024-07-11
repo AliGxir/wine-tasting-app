@@ -7,7 +7,7 @@ const Wine = ({ id, name, price, image, handleLike, isLiked }) => {
       <Link to={`/wines/${id}`}>
         <h4>{name}</h4>
       </Link>
-      <p>Price: {price}</p>
+      <p>Price: ${price}</p>
       <button
         onClick={() => handleLike({ id, name, price, image })}
         className={isLiked ? "primary" : ""}

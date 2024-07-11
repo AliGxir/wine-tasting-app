@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Wine from "./Wine";
 
 // details page doesn't have anyone passing props directly, render by the router directly
 // parent route, APP can funnel via oulet, but can't give detail of one of them, so fetch current data obj and update via state
@@ -32,7 +31,7 @@ const WineDetail = () => {
     <li className="card" data-testid="wine-item">
       <img src={image} alt={name} />
       <h4>{name}</h4>
-      <p>Price: {price}</p>
+      <p>Price: ${price}</p>
       <p>Region: {region}</p>
       <p>Rating: {rating}</p>
       <p>Tasting Notes: {tastingNotes}</p>
