@@ -20,7 +20,7 @@ const Wines = () => {
     .map((wine) => (
       <Wine
         key={wine.id}
-        isLiked={favWines.find((wineObj) => wine.id === wineObj.id)} // needs some clarification of where isLiked comes from
+        isLiked={favWines.find((wineObj) => wine.id === wineObj.id)} 
         {...wine}
         handleLike={handleLike}
       />

@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "wines/new",
-        element: <WineForm />, // components render by router when path is visited
+        element: <WineForm />, 
       },
       {
         path: "wines/:wineId",
