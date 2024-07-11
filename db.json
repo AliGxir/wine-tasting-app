@@ -91,8 +91,12 @@
       "image": "https://www.vintagewineandport.co.uk/images/products/medium_Product_25366-1986-Yquem.jpg.0.jpg"
     }
   ],
-  
   "favorites": [
-  
+    {
+      "id": "2",
+      "name": "Sassicaia",
+      "price": 300,
+      "image": "https://cdn.cluboenologique.com/wp-content/uploads/2021/02/12142753/SASSICAIA-2018-75cl-scaled.jpg"
+    }
   ]
 }

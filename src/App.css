@@ -36,19 +36,24 @@
 .cards {
   padding: 2em;
   list-style: none;
-  width: auto;
-  height: auto;
   max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
 }
 
 .card {
   padding: 2em;
   list-style: none;
-  width: 20%;
-  height: 20%;
-  max-width: 100%;
+  float: inline-start;
+  width: 10%;
+  height: 10%;
+  object-fit: scale-down;
 }
 
+.card img {
+  height: auto;
+  width: 100%;
+}
 
 .read-the-docs {
   color: #888;
@@ -69,13 +74,22 @@
   width: 10%;
 }
 
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  z-index: 1;
+}
 .hero-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   background-image: url('https://img.freepik.com/free-photo/top-view-delicious-organic-wine-grapes_23-2148722561.jpg');
-  background-size: cover;
+  background-size: cover ;
   background-position: center;
   position: relative;
   color: white;
@@ -133,14 +147,5 @@
   background-color: #8b0000; /* Darker wine red color */
 }
 
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
-  z-index: 1;
-}
 
 
