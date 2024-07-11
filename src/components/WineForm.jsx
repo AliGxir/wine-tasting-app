@@ -1,6 +1,6 @@
 import { string, object, number } from "yup";
 import { useState } from "react";
-import { useOutletContext, useNavigate, useLocation } from "react-router-dom";
+import { useOutletContext, useNavigate } from "react-router-dom";
 import { v4 as uuid } from "uuid";
 import { fetchPostWine } from "./apis/wineApi";
 

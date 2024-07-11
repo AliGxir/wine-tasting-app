@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 // parent route, APP can funnel via oulet, but can't give detail of one of them, so fetch current data obj and update via state
 // useEffect use useState in tandem to display data
 // if condition if don't have data yet, place above the destructured variable
+// useParams returns an object of key/value pairs of teh dynaic params from the URL
 
 const WineDetail = () => {
   const [wine, setWine] = useState(null);
