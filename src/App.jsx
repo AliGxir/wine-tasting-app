@@ -3,6 +3,7 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import Header from "./components/navigation/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -78,6 +79,7 @@ const App = () => {
       <Header isDarMode={isDarkMode} onToggleDarkMode={toggleDarkMode} />
       <Outlet context={{ wines, handleLike, favWines, handleAddWine }} />
       {/* only contains information*/}
+      <Footer />
     </div>
   );
 };
