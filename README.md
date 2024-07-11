@@ -9,7 +9,7 @@ The purpose of this single-page application is to foster a community of wine lov
 - [Dependencies](#dependencies)
 - [Starting the Application](#starting-the-application)
 - [Using the Application](#using-the-application)
-- [Optional Features](#future-roadmap)
+- [Future Roadmap](#future-roadmap)
 - [License](#license)
 
 
