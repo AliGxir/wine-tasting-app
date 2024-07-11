@@ -12,21 +12,23 @@ const App = () => {
 
   const toggleDarkMode = () => setIsDarkMode((current) => !current);
 
-  useEffect(() => { // used for side effects like fetch data in sync w/rendering cycle
+  useEffect(() => {
+    // used for side effects like fetch data in sync w/rendering cycle
     (() => {
       fetch("http://localhost:3000/wines")
         .then((resp) => resp.json())
         .then((wines) => setWines(wines))
-        .catch((err) => toast.error(`${err.name}: ${err.message}`));
+        .catch((error) => toast.error(`${error.name}: ${error.message}`));
     })();
   }, []);
 
-  useEffect(() => { // clean up fxn undo effect, invoked on every rendering, anynomous fxn returned at bottom of first arugment of the useEffect fxn
+  useEffect(() => {
+    // clean up fxn undo effect, invoked on every rendering, anynomous fxn returned at bottom of first arugment of the useEffect fxn
     (() => {
       fetch("http://localhost:3000/favorites")
         .then((resp) => resp.json())
         .then((wines) => setFavWines(wines))
-        .catch((err) => toast.error(`${err.name}: ${err.message}`));
+        .catch((error) => toast.error(`${error.name}: ${error.message}`));
     })();
   }, []);
 

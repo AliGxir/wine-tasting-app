@@ -33,9 +33,11 @@
   }
 }
 
-.card {
+.cards {
   padding: 2em;
   list-style: none;
+  width: 100%;
+  height: 20%;
 }
 
 .read-the-docs {
@@ -62,7 +64,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('path-to-your-background-image.jpg');
+  background-image: url('https://img.freepik.com/free-photo/top-view-delicious-organic-wine-grapes_23-2148722561.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -70,26 +72,49 @@
 }
 
 .hero-content {
-  text-align: center;
+  text-align: left;
   z-index: 2;
+  margin: 0;
+  padding: 0%;
+  width: 70%;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: left;
+  vertical-align: top;
+  margin: 0;
+  padding: 0%;
+  z-index: 10;
 }
 
-.hero-content p {
-  font-size: 1.5rem;
+.box {
+  inline-size: 175px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0%;
+  text-align: left;
+  vertical-align: top;
+  padding: 0%;
+  z-index: 2;
+}
+
+.hero-content h4 {
+  font-size: 0.75rem;
   margin-bottom: 2rem;
+  text-align: left;
+  padding: 25px;
+  width: 1000px;
+  vertical-align: text-top;
 }
 
 .cta-button {
   background-color: #b22222; /* Wine red color */
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -109,7 +134,7 @@
 }
 
 .wine-container {
-  
+
 }
 
 
