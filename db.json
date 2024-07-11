@@ -89,6 +89,15 @@
       "rating": 4.9,
       "tasting_notes": "Luxurious and sweet with flavors of apricot, honey, and vanilla.",
       "image": "https://www.vintagewineandport.co.uk/images/products/medium_Product_25366-1986-Yquem.jpg.0.jpg"
+    },
+    {
+      "id": "408b",
+      "image": "test",
+      "tastingNotes": "test",
+      "rating": 2,
+      "price": "123.12",
+      "region": "test",
+      "name": "test"
     }
   ],
   "favorites": [
@@ -97,6 +106,18 @@
       "name": "Sassicaia",
       "price": 300,
       "image": "https://cdn.cluboenologique.com/wp-content/uploads/2021/02/12142753/SASSICAIA-2018-75cl-scaled.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Penfolds Grange",
+      "price": 700,
+      "image": "https://www.astorwines.com/images/items/16342.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Opus One",
+      "price": 350,
+      "image": "https://d3czfiwbzom72b.cloudfront.net/wp-content/uploads/2021/10/Opus-One-Napa-Red-2018.png"
     }
   ]
 }

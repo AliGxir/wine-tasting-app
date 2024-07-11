@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = ({ isDarkMode, onToggleDarkMode }) => {
   return (
@@ -9,7 +9,7 @@ const Header = ({ isDarkMode, onToggleDarkMode }) => {
       </h1>
       <NavLink to="/wines">All Wines</NavLink>
       <NavLink 
-        to="/wines/favorite-wines"
+        to="/favorite-wines"
         className={({ isActive }) => (isActive ? "active" : "")}
       >
         My Favorites

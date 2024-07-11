@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const WineDetail = () => {
   const [wine, setWine] = useState(null);
   const { wineId } = useParams();
-
+  console.log(wineId)
   useEffect(() => {
     fetch(`http://localhost:3000/wines/${wineId}`)
       .then((resp) => {
