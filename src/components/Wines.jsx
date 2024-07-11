@@ -7,8 +7,8 @@ const Wines = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const { wines, handleLike, favWines } = useOutletContext();
   const location = useLocation();
-  console.log(location);
   const winesDisplay = location.pathname === "/wines" ? wines : favWines;
+
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -20,7 +20,7 @@ const Wines = () => {
     .map((wine) => (
       <Wine
         key={wine.id}
-        isLiked={favWines.find((wineObj) => wine.id === wineObj.id)}
+        isLiked={favWines.find((wineObj) => wine.id === wineObj.id)} // needs some clarification of where isLiked comes from
         {...wine}
         handleLike={handleLike}
       />

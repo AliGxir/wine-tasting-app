@@ -3,7 +3,6 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import Header from "./components/navigation/Header";
-import Hero from "./components/Hero";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);

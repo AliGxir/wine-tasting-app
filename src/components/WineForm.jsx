@@ -44,12 +44,14 @@ const WineForm = () => {
     // validate with yup
     wineSchema
       .validate(formData)
+      // talk to the server
       .then((validFormData) => {
         const finalizedData = {
           ...validFormData,
           id: uuid().slice(0, 4),
           price: Number.parseFloat(formData.price).toFixed(2),
         };
+        // update state
         handleAddWine(finalizedData);
         fetchPostWine(url, finalizedData, handleError, navigate);
       })
