@@ -18,15 +18,11 @@ a {
   color: #646cff;
   text-decoration: inherit;
   letter-spacing: 0.2rem;
-  word-spacing: 1rem;
+  margin: 20px;
 }
 a:hover {
   color: #535bf2;
   border-bottom: 1px solid var(--blue);
-}
-
-a.active {
-
 }
 
 body {
@@ -56,6 +52,7 @@ button {
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -76,6 +73,9 @@ button:focus-visible {
 .search-bar {
   width: 30%;
   margin-left: 1%;
+  padding: 0.5%;
+  padding-top: 5px;
+  margin-top: 25px;
 }
 
 .App {
@@ -89,3 +89,4 @@ button:focus-visible {
   --background: var(--white);
   --primary: var(--dark-turquoise);
 }
+
