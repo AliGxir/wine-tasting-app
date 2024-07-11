@@ -63,7 +63,7 @@ The purpose of this single-page application is to foster a community of wine lov
 
 User can: 
 - see the landing page and the navigate to the different links in the header section
-- click on each image to see more details
+- click on the name of each image to see more details
 - click on the `Add to My Favorites` button to save it to the `My Favorites` tab
 - undo the save by clicking on the `Remove From My Favorite` tab
 - click on the `Wine Form` link in the header section to fill out a form to add a new wine to the collection

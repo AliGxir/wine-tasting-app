@@ -5,7 +5,7 @@ const Wine = ({ id, name, price, image, handleLike, isLiked }) => {
     <li className="card" data-testid="wine-item">
       <img src={image} alt={name} />
       <Link to={`/wines/${id}`}>
-        <h4>{name}</h4>{" "}
+        <h4>{name}</h4>
       </Link>
       <p>Price: {price}</p>
       <button
