@@ -7,7 +7,7 @@
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 0.3em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -33,11 +33,13 @@
   }
 }
 
-.cards {
+.card {
   padding: 2em;
   list-style: none;
-  width: 100%;
-  height: 20%;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  
 }
 
 .read-the-docs {
@@ -132,9 +134,3 @@
   background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
   z-index: 1;
 }
-
-.wine-container {
-
-}
-
-
